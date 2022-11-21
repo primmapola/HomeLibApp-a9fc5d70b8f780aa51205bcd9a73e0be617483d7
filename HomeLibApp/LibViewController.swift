@@ -9,14 +9,13 @@ import UIKit
 
 class LibViewController: UITableViewController {
 
-    private var books = Book.getBook()
+    private var books: [Book] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
         navigationItem.leftBarButtonItem = editButtonItem
-        guard let book = UserDefaults.standard.value(forKey: "book") as? Book else {return}
-        books.append(book)
+        books = StorageManager.shared.fetchBooks()
 
     }
     
@@ -70,8 +69,8 @@ class LibViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             books.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade
-            )
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            StorageManager.shared.deleteContact(at: indexPath.row)
         }
     }
     

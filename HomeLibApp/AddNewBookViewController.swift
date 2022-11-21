@@ -57,7 +57,7 @@ class AddNewBookViewController: UIViewController {
         
         self.book = Book(name: name, author: author, genre: genre, language: "", pubHouse: pubHouse, translator: "", status: status, location: "", image: name)
         
-        UserDefaults.standard.set(book, forKey: "book")
+        StorageManager.shared.save(book: book)
 
         
     }

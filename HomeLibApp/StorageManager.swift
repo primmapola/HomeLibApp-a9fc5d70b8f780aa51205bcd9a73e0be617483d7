@@ -1,40 +1,40 @@
-////
-////  StorageManager.swift
-////  HomeLibApp
-////
-////  Created by Grigory Don on 21.11.2022.
-////
 //
-//import Foundation
+//  StorageManager.swift
+//  HomeLibApp
 //
-//import Foundation
+//  Created by Grigory Don on 21.11.2022.
 //
-//class StorageManager {
-//    static let shared = StorageManager()
-//
-////    private let fileURL = URL.documentsDirectory.appending(path: "Contact").appendingPathExtension("plist")
-//
-//    private init() {
-////        print(fileURL)
-//    }
-//
-//    func save(contact: Contact) {
-//        var contacts = fetchContacts()
-//        contacts.append(contact)
-//        guard let data = try? PropertyListEncoder().encode(contacts) else { return }
-//        try? data.write(to: fileURL, options: .noFileProtection)
-//    }
-//
-//    func fetchContacts() -> [Book] {
-////        guard let data = try? Data(contentsOf: fileURL) else { return [] }
-//        guard let contacts = try? PropertyListDecoder().decode([Book].self, from: data) else { return [] }
-//        return contacts
-//    }
-//
-//    func deleteContact(at index: Int) {
-//        var contacts = fetchContacts()
-//        contacts.remove(at: index)
-//        guard let data = try? PropertyListEncoder().encode(contacts) else { return }
-//        try? data.write(to: fileURL, options: .noFileProtection)
-//    }
-//}
+
+import Foundation
+
+class StorageManager {
+    static let shared = StorageManager()
+    
+//    private let fileURL = URL.documentsDirectory.appending(path: "Contact").appendingPathExtension("plist")
+    
+    let bookKey = "bookKey"
+    
+    private init() {
+//        print(fileURL)
+    }
+    
+    func save(book: Book) {
+        var books = fetchBooks()
+        books.append(book)
+        guard let data = try? JSONEncoder().encode(books) else { return }
+        UserDefaults.standard.set(data, forKey: bookKey)
+    }
+    
+    func fetchBooks() -> [Book] {
+        guard let data = UserDefaults.standard.data(forKey: bookKey) else { return[] }
+        guard let books = try? JSONDecoder().decode([Book].self, from: data) else { return [] }
+        return books
+    }
+    
+    func deleteContact(at index: Int) {
+        var books = fetchBooks()
+        books.remove(at: index)
+        guard let data = try? JSONEncoder().encode(books) else { return }
+        UserDefaults.standard.set(data, forKey: bookKey)
+    }
+}
