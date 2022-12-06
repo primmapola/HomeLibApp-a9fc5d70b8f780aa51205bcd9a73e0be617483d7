@@ -20,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="YmT-Yk-JOw">
-                                <rect key="frame" x="27.333333333333343" y="251" width="338.33333333333326" height="350"/>
+                                <rect key="frame" x="60.333333333333343" y="301" width="272.33333333333326" height="250"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9b-r8-aq1" userLabel="YourList">
-                                        <rect key="frame" x="0.0" y="0.0" width="338.33333333333331" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="272.33333333333331" height="50"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Bc6-FS-Scf">
                                                 <rect key="frame" x="0.0" y="-1.3333333333333321" width="50" height="52"/>
@@ -33,7 +33,7 @@
                                                 <imageReference key="image" image="list.bullet.clipboard" catalog="system" symbolScale="default"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYJ-n5-SDO">
-                                                <rect key="frame" x="50" y="0.0" width="288.33333333333331" height="50"/>
+                                                <rect key="frame" x="49.999999999999986" y="0.0" width="222.33333333333331" height="50"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Ваш список книг">
                                                     <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
@@ -48,7 +48,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwh-G4-f2Z" userLabel="Search">
-                                        <rect key="frame" x="0.0" y="100" width="338.33333333333331" height="50"/>
+                                        <rect key="frame" x="0.0" y="100" width="272.33333333333331" height="50"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Iv1-Yt-3OU">
                                                 <rect key="frame" x="0.0" y="-2" width="50" height="54.666666666666664"/>
@@ -58,7 +58,7 @@
                                                 <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fi-PU-Izv">
-                                                <rect key="frame" x="50" y="0.0" width="288.33333333333331" height="50"/>
+                                                <rect key="frame" x="49.999999999999986" y="0.0" width="222.33333333333331" height="50"/>
                                                 <state key="normal" title="Button" image="magnifyingglass" catalog="system"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Поиск">
                                                     <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
@@ -69,32 +69,8 @@
                                             <constraint firstAttribute="height" constant="50" id="jqZ-96-Vck"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYc-sX-80H" userLabel="AddNew">
-                                        <rect key="frame" x="0.0" y="200" width="338.33333333333331" height="50"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="plus.app" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ipb-Oa-Vuc">
-                                                <rect key="frame" x="0.0" y="1.6666666666666643" width="50" height="47"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="eg5-Ap-fc9"/>
-                                                </constraints>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqT-hH-GDV">
-                                                <rect key="frame" x="50" y="0.0" width="288.33333333333331" height="50"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Добавить новую книгу">
-                                                    <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="WlJ-Ah-Dlc" kind="presentation" id="eSx-jn-Fzy"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="9O7-1H-3eL"/>
-                                        </constraints>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwI-vQ-H6B" userLabel="Favourite">
-                                        <rect key="frame" x="0.0" y="300" width="338.33333333333331" height="50"/>
+                                        <rect key="frame" x="0.0" y="200" width="272.33333333333331" height="50"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JxG-N7-KSG">
                                                 <rect key="frame" x="0.0" y="-0.33333333333333215" width="50" height="49.666666666666657"/>
@@ -103,11 +79,14 @@
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W63-WG-2gb">
-                                                <rect key="frame" x="50" y="0.0" width="288.33333333333331" height="50"/>
+                                                <rect key="frame" x="49.999999999999986" y="0.0" width="222.33333333333331" height="50"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Избранное">
                                                     <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="l5z-Vc-7eY" kind="presentation" modalPresentationStyle="fullScreen" id="rtM-WV-qWu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -150,9 +129,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Поиск" id="W63-l3-KQ6">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="oGe-Zb-dD2" id="h1R-wU-AFN"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="book" textLabel="j5D-0c-40M" detailTextLabel="dAW-MG-qhE" style="IBUITableViewCellStyleSubtitle" id="7mu-pB-XWO">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7mu-pB-XWO" id="GsR-xX-YSc">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -185,14 +172,31 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Your Home Library" id="dZn-di-crd">
+                        <barButtonItem key="leftBarButtonItem" title="back" image="chevron.backward.2" catalog="system" id="UCT-y8-avb">
+                            <connections>
+                                <action selector="backButton:" destination="oGe-Zb-dD2" id="sbM-cL-RU8"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="kBB-6O-kD3">
                             <connections>
                                 <segue destination="WlJ-Ah-Dlc" kind="presentation" id="Rtk-r5-J2C"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="uLr-wA-LSt" id="GES-RR-QrP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uxh-zJ-LB2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="uLr-wA-LSt">
+                    <connections>
+                        <outlet property="delegate" destination="oGe-Zb-dD2" id="VaG-fB-0Wt"/>
+                        <outlet property="searchBar" destination="W63-l3-KQ6" id="8N8-lg-TjZ"/>
+                        <outlet property="searchContentsController" destination="oGe-Zb-dD2" id="a0q-F2-MAd"/>
+                        <outlet property="searchResultsDataSource" destination="oGe-Zb-dD2" id="aOR-vo-YMR"/>
+                        <outlet property="searchResultsDelegate" destination="oGe-Zb-dD2" id="h94-6z-ge2"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="849" y="7"/>
         </scene>
@@ -290,6 +294,73 @@
                 <exit id="z6B-9u-K8o" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2716.7938931297708" y="5.6338028169014089"/>
+        </scene>
+        <!--Избранные книги-->
+        <scene sceneID="kic-e8-D49">
+            <objects>
+                <tableViewController id="AUX-Po-s9v" customClass="FavouriteBooksViewController" customModule="HomeLibApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dHR-XN-eUh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favouriteBook" textLabel="R8p-Wv-HHy" detailTextLabel="N2h-A2-RnH" style="IBUITableViewCellStyleSubtitle" id="653-dT-yM4">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="653-dT-yM4" id="FpD-ns-gj4">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R8p-Wv-HHy">
+                                            <rect key="frame" x="20" y="6.0000000000000009" width="25" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N2h-A2-RnH">
+                                            <rect key="frame" x="19.999999999999996" y="22.333333333333336" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AUX-Po-s9v" id="rLV-fw-o5f"/>
+                            <outlet property="delegate" destination="AUX-Po-s9v" id="wiI-pT-OT5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Избранные книги" id="8BR-PQ-nRQ">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward.2" catalog="system" id="jY2-2s-p4R">
+                            <connections>
+                                <action selector="backButton:" destination="AUX-Po-s9v" id="2LV-Dx-N9d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dpr-kC-PE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4519" y="16"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LxT-56-GYY">
+            <objects>
+                <navigationController id="l5z-Vc-7eY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oHu-fm-dpc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AUX-Po-s9v" kind="relationship" relationship="rootViewController" id="i9n-iC-tUL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZ7-5Q-NhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3620" y="16"/>
         </scene>
         <!--Book Info View Controller-->
         <scene sceneID="NdL-m6-jXf">
@@ -442,13 +513,10 @@
             <point key="canvasLocation" x="1808" y="6"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="eSx-jn-Fzy"/>
-    </inferredMetricsTieBreakers>
     <resources>
+        <image name="chevron.backward.2" catalog="system" width="128" height="108"/>
         <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
-        <image name="plus.app" catalog="system" width="128" height="114"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <namedColor name="AccentColor">

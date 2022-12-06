@@ -9,7 +9,7 @@ import UIKit
 
 class AddNewBookViewController: UIViewController {
     
-    var book = Book(name: "", author: "", genre: "", language: "", pubHouse: "", translator: "", status: "", location: "", image: "")
+    var book: Book!
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameTF: UITextField!
@@ -25,7 +25,6 @@ class AddNewBookViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         saveButtonState()
 
         
@@ -45,20 +44,8 @@ class AddNewBookViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
         guard segue.identifier == "saveSegue" else { return }
-        
-        
-        let name = nameTF.text ?? ""
-        let author = authorTF.text ?? ""
-        let pubHouse = pubHouseTF.text ?? ""
-        let genre = genreTF.text ?? ""
-        let status = statusTF.text ?? ""
-        
-        self.book = Book(name: name, author: author, genre: genre, language: "", pubHouse: pubHouse, translator: "", status: status, location: "", image: name)
-        
-        StorageManager.shared.save(book: book)
-
+        book = Book(value: [nameTF.text, authorTF.text, genreTF.text,  translatorTF.text, statusTF.text, pubHouseTF.text, locationTF.text, "Заглушка",  false])
         
     }
 

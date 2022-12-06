@@ -16,6 +16,10 @@
 		06B960522906A8CC0061A1CC /* LibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B960512906A8CC0061A1CC /* LibViewController.swift */; };
 		06B960542906A9740061A1CC /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B960532906A9740061A1CC /* Books.swift */; };
 		06B960562906B5A70061A1CC /* BookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B960552906B5A70061A1CC /* BookInfoViewController.swift */; };
+		74B24202293EBE120015B836 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 74B24201293EBE120015B836 /* Realm */; };
+		74B24204293EBE120015B836 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 74B24203293EBE120015B836 /* RealmSwift */; };
+		74B24206293EBFBE0015B836 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B24205293EBFBE0015B836 /* DataManager.swift */; };
+		74B24208293EC5E70015B836 /* FavouriteBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B24207293EC5E70015B836 /* FavouriteBooksViewController.swift */; };
 		74FB368E292C09D3005FC12E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB368D292C09D3005FC12E /* MenuViewController.swift */; };
 		74FB3690292C1586005FC12E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB368F292C1586005FC12E /* StorageManager.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +36,8 @@
 		06B960512906A8CC0061A1CC /* LibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibViewController.swift; sourceTree = "<group>"; };
 		06B960532906A9740061A1CC /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 		06B960552906B5A70061A1CC /* BookInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoViewController.swift; sourceTree = "<group>"; };
+		74B24205293EBFBE0015B836 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		74B24207293EC5E70015B836 /* FavouriteBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteBooksViewController.swift; sourceTree = "<group>"; };
 		74FB368D292C09D3005FC12E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		74FB368F292C1586005FC12E /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B24204293EBE120015B836 /* RealmSwift in Frameworks */,
+				74B24202293EBE120015B836 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +80,10 @@
 				06B960552906B5A70061A1CC /* BookInfoViewController.swift */,
 				74FB368F292C1586005FC12E /* StorageManager.swift */,
 				061CAE28290ABB9B00283C46 /* AddNewBookViewController.swift */,
+				74B24205293EBFBE0015B836 /* DataManager.swift */,
 				06B960532906A9740061A1CC /* Books.swift */,
 				74FB368D292C09D3005FC12E /* MenuViewController.swift */,
+				74B24207293EC5E70015B836 /* FavouriteBooksViewController.swift */,
 				06B960432906A6BE0061A1CC /* Main.storyboard */,
 				06B960462906A6BF0061A1CC /* Assets.xcassets */,
 				06B960482906A6BF0061A1CC /* LaunchScreen.storyboard */,
@@ -98,6 +108,10 @@
 			dependencies = (
 			);
 			name = HomeLibApp;
+			packageProductDependencies = (
+				74B24201293EBE120015B836 /* Realm */,
+				74B24203293EBE120015B836 /* RealmSwift */,
+			);
 			productName = HomeLibApp;
 			productReference = 06B9603A2906A6BE0061A1CC /* HomeLibApp.app */;
 			productType = "com.apple.product-type.application";
@@ -126,6 +140,9 @@
 				Base,
 			);
 			mainGroup = 06B960312906A6BE0061A1CC;
+			packageReferences = (
+				74B24200293EBE120015B836 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 06B9603B2906A6BE0061A1CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,12 +171,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				06B960542906A9740061A1CC /* Books.swift in Sources */,
+				74B24208293EC5E70015B836 /* FavouriteBooksViewController.swift in Sources */,
 				06B960562906B5A70061A1CC /* BookInfoViewController.swift in Sources */,
 				061CAE29290ABB9B00283C46 /* AddNewBookViewController.swift in Sources */,
 				74FB368E292C09D3005FC12E /* MenuViewController.swift in Sources */,
 				06B960522906A8CC0061A1CC /* LibViewController.swift in Sources */,
 				06B9603E2906A6BE0061A1CC /* AppDelegate.swift in Sources */,
 				06B960402906A6BE0061A1CC /* SceneDelegate.swift in Sources */,
+				74B24206293EBFBE0015B836 /* DataManager.swift in Sources */,
 				74FB3690292C1586005FC12E /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +405,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74B24200293EBE120015B836 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74B24201293EBE120015B836 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B24200293EBE120015B836 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		74B24203293EBE120015B836 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74B24200293EBE120015B836 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06B960322906A6BE0061A1CC /* Project object */;
 }
