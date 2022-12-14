@@ -16,10 +16,21 @@
 		06B960522906A8CC0061A1CC /* LibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B960512906A8CC0061A1CC /* LibViewController.swift */; };
 		06B960542906A9740061A1CC /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B960532906A9740061A1CC /* Books.swift */; };
 		06B960562906B5A70061A1CC /* BookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B960552906B5A70061A1CC /* BookInfoViewController.swift */; };
+		7432DE34294911F500673152 /* wannaReadBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7432DE33294911F500673152 /* wannaReadBooks.swift */; };
+		7432DE36294924E100673152 /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7432DE35294924E100673152 /* EditTableViewController.swift */; };
+		744923242947B98700C99C44 /* AddBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744923232947B98700C99C44 /* AddBookTableViewController.swift */; };
+		744923262947BBAC00C99C44 /* HeaderOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744923252947BBAC00C99C44 /* HeaderOptionsTableViewCell.swift */; };
+		744923282947BBEE00C99C44 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744923272947BBEE00C99C44 /* OptionsTableViewCell.swift */; };
+		7449232A2947BCCF00C99C44 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744923292947BCCF00C99C44 /* UIFont.swift */; };
+		7449232C2947BD1800C99C44 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7449232B2947BD1800C99C44 /* UILabel.swift */; };
+		7449232E2947C01300C99C44 /* AlertCellName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7449232D2947C01300C99C44 /* AlertCellName.swift */; };
+		744923302947C0CB00C99C44 /* AlertPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7449232F2947C0CB00C99C44 /* AlertPhoto.swift */; };
+		744923322947C50B00C99C44 /* WannaReadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744923312947C50B00C99C44 /* WannaReadTableViewController.swift */; };
 		74B24202293EBE120015B836 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 74B24201293EBE120015B836 /* Realm */; };
 		74B24204293EBE120015B836 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 74B24203293EBE120015B836 /* RealmSwift */; };
 		74B24206293EBFBE0015B836 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B24205293EBFBE0015B836 /* DataManager.swift */; };
 		74B24208293EC5E70015B836 /* FavouriteBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B24207293EC5E70015B836 /* FavouriteBooksViewController.swift */; };
+		74B2420A293F5C1F0015B836 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B24209293F5C1F0015B836 /* SearchViewController.swift */; };
 		74FB368E292C09D3005FC12E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB368D292C09D3005FC12E /* MenuViewController.swift */; };
 		74FB3690292C1586005FC12E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB368F292C1586005FC12E /* StorageManager.swift */; };
 /* End PBXBuildFile section */
@@ -36,8 +47,19 @@
 		06B960512906A8CC0061A1CC /* LibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibViewController.swift; sourceTree = "<group>"; };
 		06B960532906A9740061A1CC /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 		06B960552906B5A70061A1CC /* BookInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoViewController.swift; sourceTree = "<group>"; };
+		7432DE33294911F500673152 /* wannaReadBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wannaReadBooks.swift; sourceTree = "<group>"; };
+		7432DE35294924E100673152 /* EditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableViewController.swift; sourceTree = "<group>"; };
+		744923232947B98700C99C44 /* AddBookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookTableViewController.swift; sourceTree = "<group>"; };
+		744923252947BBAC00C99C44 /* HeaderOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderOptionsTableViewCell.swift; sourceTree = "<group>"; };
+		744923272947BBEE00C99C44 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		744923292947BCCF00C99C44 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		7449232B2947BD1800C99C44 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		7449232D2947C01300C99C44 /* AlertCellName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCellName.swift; sourceTree = "<group>"; };
+		7449232F2947C0CB00C99C44 /* AlertPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPhoto.swift; sourceTree = "<group>"; };
+		744923312947C50B00C99C44 /* WannaReadTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WannaReadTableViewController.swift; sourceTree = "<group>"; };
 		74B24205293EBFBE0015B836 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		74B24207293EC5E70015B836 /* FavouriteBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteBooksViewController.swift; sourceTree = "<group>"; };
+		74B24209293F5C1F0015B836 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		74FB368D292C09D3005FC12E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		74FB368F292C1586005FC12E /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,8 +104,19 @@
 				061CAE28290ABB9B00283C46 /* AddNewBookViewController.swift */,
 				74B24205293EBFBE0015B836 /* DataManager.swift */,
 				06B960532906A9740061A1CC /* Books.swift */,
+				7432DE33294911F500673152 /* wannaReadBooks.swift */,
 				74FB368D292C09D3005FC12E /* MenuViewController.swift */,
 				74B24207293EC5E70015B836 /* FavouriteBooksViewController.swift */,
+				74B24209293F5C1F0015B836 /* SearchViewController.swift */,
+				744923232947B98700C99C44 /* AddBookTableViewController.swift */,
+				744923252947BBAC00C99C44 /* HeaderOptionsTableViewCell.swift */,
+				744923272947BBEE00C99C44 /* OptionsTableViewCell.swift */,
+				744923292947BCCF00C99C44 /* UIFont.swift */,
+				7432DE35294924E100673152 /* EditTableViewController.swift */,
+				7449232B2947BD1800C99C44 /* UILabel.swift */,
+				7449232D2947C01300C99C44 /* AlertCellName.swift */,
+				7449232F2947C0CB00C99C44 /* AlertPhoto.swift */,
+				744923312947C50B00C99C44 /* WannaReadTableViewController.swift */,
 				06B960432906A6BE0061A1CC /* Main.storyboard */,
 				06B960462906A6BF0061A1CC /* Assets.xcassets */,
 				06B960482906A6BF0061A1CC /* LaunchScreen.storyboard */,
@@ -171,15 +204,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				06B960542906A9740061A1CC /* Books.swift in Sources */,
+				74B2420A293F5C1F0015B836 /* SearchViewController.swift in Sources */,
 				74B24208293EC5E70015B836 /* FavouriteBooksViewController.swift in Sources */,
+				744923322947C50B00C99C44 /* WannaReadTableViewController.swift in Sources */,
 				06B960562906B5A70061A1CC /* BookInfoViewController.swift in Sources */,
+				744923282947BBEE00C99C44 /* OptionsTableViewCell.swift in Sources */,
+				744923242947B98700C99C44 /* AddBookTableViewController.swift in Sources */,
+				7449232C2947BD1800C99C44 /* UILabel.swift in Sources */,
 				061CAE29290ABB9B00283C46 /* AddNewBookViewController.swift in Sources */,
 				74FB368E292C09D3005FC12E /* MenuViewController.swift in Sources */,
+				7432DE36294924E100673152 /* EditTableViewController.swift in Sources */,
+				7449232A2947BCCF00C99C44 /* UIFont.swift in Sources */,
 				06B960522906A8CC0061A1CC /* LibViewController.swift in Sources */,
+				744923262947BBAC00C99C44 /* HeaderOptionsTableViewCell.swift in Sources */,
 				06B9603E2906A6BE0061A1CC /* AppDelegate.swift in Sources */,
+				7432DE34294911F500673152 /* wannaReadBooks.swift in Sources */,
 				06B960402906A6BE0061A1CC /* SceneDelegate.swift in Sources */,
 				74B24206293EBFBE0015B836 /* DataManager.swift in Sources */,
+				744923302947C0CB00C99C44 /* AlertPhoto.swift in Sources */,
 				74FB3690292C1586005FC12E /* StorageManager.swift in Sources */,
+				7449232E2947C01300C99C44 /* AlertCellName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +378,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,7 +410,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

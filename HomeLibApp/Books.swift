@@ -10,14 +10,14 @@ import RealmSwift
 
 class Book: Object {
     
-    @Persisted var name = ""
-    @Persisted var author = ""
-    @Persisted var genre = ""
-    @Persisted var translator = ""
-    @Persisted var status = ""
-    @Persisted var pubHouse = ""
-    @Persisted var location = ""
-    @Persisted var image = ""
-    @Persisted var isFavourite = false
+    @Persisted var name: String = ""
+    @Persisted var author: String = ""
+    @Persisted var genre: String = ""
+    @Persisted var translator: String = ""
+    @Persisted var status: String = ""
+    @Persisted var pubHouse: String = ""
+    @Persisted var location: String = ""
+    @Persisted var image: String = ""
+    @Persisted var isFavourite: Bool = false
     
 }

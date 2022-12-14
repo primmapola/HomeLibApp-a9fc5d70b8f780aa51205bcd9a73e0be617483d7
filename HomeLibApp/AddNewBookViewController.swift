@@ -9,7 +9,7 @@ import UIKit
 
 class AddNewBookViewController: UIViewController {
     
-    var book: Book!
+    var book: WRBook!
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameTF: UITextField!
@@ -26,8 +26,6 @@ class AddNewBookViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         saveButtonState()
-
-        
     }
     
     private func saveButtonState() {
@@ -45,7 +43,7 @@ class AddNewBookViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "saveSegue" else { return }
-        book = Book(value: [nameTF.text, authorTF.text, genreTF.text,  translatorTF.text, statusTF.text, pubHouseTF.text, locationTF.text, "Заглушка",  false])
+        book = WRBook(value: [nameTF.text, authorTF.text])
         
     }
 

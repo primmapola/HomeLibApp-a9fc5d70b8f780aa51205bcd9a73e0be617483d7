@@ -14,21 +14,56 @@ class StorageManager {
    
     private init() {}
     
-    func save(_ books: [Book]) {
-        try! realm.write {
-            realm.add(books)
+    func delete(_ book: Book) {
+        write {
+            realm.delete(book)
         }
     }
     
-    func delete(_ book: Book) {
-        try! realm.write {
+    func delete2(_ book: WRBook) {
+        write {
             realm.delete(book)
         }
     }
     
     func edit(_ book: Book, newValue: Bool) {
-        try! realm.write {
+        write {
             book.isFavourite = newValue
+        }
+    }
+    
+    func save(_ book: Book) {
+         try! realm.write {
+                realm.add(book)
+            }
+        }
+    
+    func save2(_ book: WRBook) {
+        try! realm.write {
+               realm.add(book)
+        }
+    }
+    
+    func edit( book: Book, newValueName: String, newValueAuthor: String, newValueGenre: String, newValuePubhouse: String, newValueTranslator: String, newValueStatus: String, newValueLocation: String, newValueImage: String) {
+        try! realm.write {
+            book.name = newValueName
+            book.author = newValueAuthor
+            book.genre = newValueGenre
+            book.status = newValueStatus
+            book.location = newValueLocation
+            book.pubHouse = newValuePubhouse
+            book.image = newValueImage
+            book.translator = newValueTranslator
+        }
+    }
+    
+    private func write(completion: () -> Void) {
+        do {
+            try realm.write {
+                completion()
+            }
+        } catch {
+            print(error)
         }
     }
 
